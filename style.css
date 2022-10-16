@@ -1,0 +1,492 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundColor: #092834;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #302c2c;
+  font-family: "Cairo", sans-serif;
+}
+/* body {
+  height: 20000px;
+} */
+/* start home */
+.home {
+  position: relative;
+  background-image: url(images/b3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--backgroundColor);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+  width: 100%;
+}
+nav img {
+  width: 90px;
+}
+nav ul {
+  display: flex;
+  /* font-size: 18px; */
+}
+nav #menue {
+  font-size: 25px;
+  display: none;
+  color: white;
+}
+nav ul li {
+  margin-right: 20px;
+  /* transition: 0.5s; */
+  border-bottom: 3px solid transparent;
+  padding: 5px 0;
+  font-weight: 600;
+}
+nav ul li:hover {
+  border-bottom: 3px solid #0277bd;
+}
+
+nav ul li a {
+  color: white;
+}
+
+.content {
+  /* background-image: url(images/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+  padding: 20px;
+  font-size: 25px;
+}
+.incontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.incontent img {
+  width: 45%;
+}
+.Ourfacilities {
+  text-align: center;
+  background-color: var(--backgroundColor);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+.Ourfacilities h1 {
+  color: white;
+  font-size: 30px;
+}
+.Facilities {
+  display: flex;
+}
+.Facilities div {
+  background-image: linear-gradient(100deg, #e04674, #3b4273);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.Facilities div:hover {
+  box-shadow: 0px 0px 5px 1px #0d7e83;
+}
+.Facilities div i {
+  display: block;
+  font-size: 40px;
+  padding: 15px;
+  color: #0277bd;
+}
+.Facilities div a {
+  display: inline-block;
+  padding: 10px 5px;
+  color: black;
+  margin: 10px;
+  border: 2px solid #0277bd;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Facilities div a:hover {
+  background-color: #0277bd;
+}
+@media (max-width: 730px) {
+  .incontent {
+    flex-direction: column;
+  }
+  .incontent img {
+    width: 70%;
+  }
+  .incontent h1 {
+    width: 100%;
+  }
+  .Facilities {
+    flex-direction: column;
+  }
+  nav #menue {
+    display: inline;
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    margin: 10px;
+    /* transition: 0.5s; */
+    border-bottom: 3px solid transparent;
+    padding: 5px 0;
+    font-weight: 600;
+  }
+  nav ul li:hover {
+    border-bottom: 3px solid #0277bd;
+  }
+  /* nav ul li {
+    margin: 10px;
+    transition: 0.5s;
+    border: 2px solid #0277bd;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+  } */
+}
+
+.display {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  text-align: left;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  color: black;
+  background-color: #504651;
+  padding: 20px;
+  z-index: 1;
+}
+/* end home */
+/* start transfer  */
+.sendmoneypage {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.sendmoneypage h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 25px;
+}
+.sendmoneypage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sendmoneypage form input {
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.sendmoneypage .btnTransfer {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+}
+.sendmoneypage p {
+  color: white;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.sendmoneypage p a {
+  color: #0277bd;
+}
+/* end transfer  */
+/* start view all customers */
+.viewAllCustomers {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.viewAllCustomers h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 25px;
+}
+.viewAllCustomers table {
+  margin: 0px auto;
+  width: 70%;
+  text-align: center;
+  border-spacing: 0;
+  color: white;
+}
+
+.viewAllCustomers table tr td {
+  padding: 10px;
+  border-bottom: 1px solid #0277bd;
+}
+
+.viewAllCustomers table tr td a {
+  display: inline-block;
+  background-color: #0277bd;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.viewAllCustomers table thead td {
+  font-weight: bold;
+}
+
+/* end view all customers */
+/* start transactions */
+.transactions {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.transactions h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 25px;
+}
+.transactions table {
+  margin: 0px auto;
+  width: 70%;
+  text-align: center;
+  border-spacing: 0;
+  color: white;
+}
+
+.transactions table tr td {
+  padding: 10px;
+  border-bottom: 1px solid #0277bd;
+}
+
+.transactions table tr td a {
+  display: inline-block;
+  background-color: #0277bd;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.transactions table thead td {
+  font-weight: bold;
+}
+/* end transactions */
+/* start checkBalance */
+.getcheckBalance {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.getcheckBalance h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 5px 10px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 25px;
+}
+.getcheckBalance form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.getcheckBalance form input {
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.getcheckBalance .submit {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+}
+.getcheckBalance p {
+  color: white;
+  font-size: 17px;
+  margin-top: 15px;
+}
+/* end checkBalance */
+/* start contact us  */
+
+.contactuspage {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  display: none;
+}
+.contactuspage h1 {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin: 20px 0 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 25px;
+}
+.contactuspage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactuspage form input {
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.contactuspage textarea {
+  min-width: 60%;
+  min-height: 350px;
+  max-width: 60%;
+  max-height: 350px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contactuspage .btnsubmit {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  width: fit-content;
+  margin-top: 50px;
+}
+/* end contact us  */
+/* start aboutus */
+
+.aboutus {
+  /* background-image: url(images/b2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 120px;
+  /* height: 100vh; */
+  background-color: #302c2c;
+  text-align: center;
+  z-index: 111;
+  display: none;
+  color: white;
+}
+
+.aboutus h1 {
+  background-color: black;
+  /* display: inline-block; */
+  color: white;
+  width: fit-content;
+  margin: 20px auto 50px;
+  padding: 15px 50px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 1px white;
+  font-size: 25px;
+}
+.aboutus img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.aboutus h2 {
+  font-size: 30px;
+}
+.aboutus a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #f335b4;
+  transition: 0.3s;
+}
+.aboutus a:hover {
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+/* end aboutus */
+.visibile {
+  display: block;
+}
+.hidden {
+  display: none;
+}
